@@ -1,0 +1,2745 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20204.21.0217.1203                               -->
+<workbook source-build='2020.4.2 (20204.21.0217.1203)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='PoliceOfficerStatisticsinNunavutDashboardv2' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Police Resources Raw Data+ (Multiple Connections)' inline='true' name='federated.1ic0zxi17thjg21fjcmcd1bjyi9a' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Police Resources Raw Data' name='excel-direct.11wseel1889w0016a47ze0ma5qhs'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/valay/OneDrive/Desktop/Ivey/General/Data Visualization Workshop/Data Viz UNB Challenge/Police Resources Raw Data.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='Police Office Raw Data' name='excel-direct.151c0da1jf9alg12nm9e91kz6tpq'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/valay/OneDrive/Desktop/Ivey/General/Data Visualization Workshop/Data Viz UNB Challenge/Police Office Raw Data.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.151c0da1jf9alg12nm9e91kz6tpq' name='Police Office Raw Data' table='[&apos;Police Office Raw Data$&apos;]' type='table'>
+          <columns gridOrigin='A1:M4:no:A1:M4:0' header='yes' outcome='6'>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='integer' name='Total number of all personnel' ordinal='1' />
+            <column datatype='integer' name='Total number of police officers' ordinal='2' />
+            <column datatype='integer' name='Male police officers' ordinal='3' />
+            <column datatype='integer' name='Female police officers' ordinal='4' />
+            <column datatype='integer' name='Total number of civilian and other personnel' ordinal='5' />
+            <column datatype='real' name='Police-civilian ratio' ordinal='6' />
+            <column datatype='real' name='Police officers per 100,000 population' ordinal='7' />
+            <column datatype='integer' name='Authorized police officer strength' ordinal='8' />
+            <column datatype='real' name='Authorized police officer strength per 100,000 population' ordinal='9' />
+            <column datatype='real' name='Criminal Code incidents per police officer' ordinal='10' />
+            <column datatype='real' name='Crime severity index' ordinal='11' />
+            <column datatype='real' name='Weighted clearance rate' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.11wseel1889w0016a47ze0ma5qhs' name='Police Resources Raw Data' table='[&apos;Police Resources Raw Data$&apos;]' type='table'>
+            <columns gridOrigin='A1:Q3:no:A1:Q3:0' header='yes' outcome='6'>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='integer' name='Total police officers salaries, wages and benefits' ordinal='1' />
+              <column datatype='integer' name='Total civilian personnel salaries, wages and benefits' ordinal='2' />
+              <column datatype='integer' name='Total special constable salaries, wages and benefits' ordinal='3' />
+              <column datatype='integer' name='Total recruit salaries, wages and benefits' ordinal='4' />
+              <column datatype='integer' name='Vehicle operating and maintenance cost' ordinal='5' />
+              <column datatype='integer' name='Building operating and maintenance cost' ordinal='6' />
+              <column datatype='integer' name='Training and professional development cost)' ordinal='7' />
+              <column datatype='integer' name='Information technology (IT) operations' ordinal='8' />
+              <column datatype='integer' name='Police equipment' ordinal='9' />
+              <column datatype='integer' name='Contracts for professional services' ordinal='10' />
+              <column datatype='integer' name='All other non-salary operating expenditures' ordinal='11' />
+              <column datatype='integer' name='Vehicle purchases' ordinal='12' />
+              <column datatype='integer' name='New building and capital projects' ordinal='13' />
+              <column datatype='integer' name='Information technology (IT) operations 1' ordinal='14' />
+              <column datatype='integer' name='Police equipment 1' ordinal='15' />
+              <column datatype='integer' name='All other capital expenditures' ordinal='16' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.151c0da1jf9alg12nm9e91kz6tpq' name='Police Office Raw Data' table='[&apos;Police Office Raw Data$&apos;]' type='table'>
+            <columns gridOrigin='A1:M4:no:A1:M4:0' header='yes' outcome='6'>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='integer' name='Total number of all personnel' ordinal='1' />
+              <column datatype='integer' name='Total number of police officers' ordinal='2' />
+              <column datatype='integer' name='Male police officers' ordinal='3' />
+              <column datatype='integer' name='Female police officers' ordinal='4' />
+              <column datatype='integer' name='Total number of civilian and other personnel' ordinal='5' />
+              <column datatype='real' name='Police-civilian ratio' ordinal='6' />
+              <column datatype='real' name='Police officers per 100,000 population' ordinal='7' />
+              <column datatype='integer' name='Authorized police officer strength' ordinal='8' />
+              <column datatype='real' name='Authorized police officer strength per 100,000 population' ordinal='9' />
+              <column datatype='real' name='Criminal Code incidents per police officer' ordinal='10' />
+              <column datatype='real' name='Crime severity index' ordinal='11' />
+              <column datatype='real' name='Weighted clearance rate' ordinal='12' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[All other capital expenditures]' value='[Police Resources Raw Data].[All other capital expenditures]' />
+          <map key='[All other non-salary operating expenditures]' value='[Police Resources Raw Data].[All other non-salary operating expenditures]' />
+          <map key='[Authorized police officer strength per 100,000 population]' value='[Police Office Raw Data].[Authorized police officer strength per 100,000 population]' />
+          <map key='[Authorized police officer strength]' value='[Police Office Raw Data].[Authorized police officer strength]' />
+          <map key='[Building operating and maintenance cost]' value='[Police Resources Raw Data].[Building operating and maintenance cost]' />
+          <map key='[Contracts for professional services]' value='[Police Resources Raw Data].[Contracts for professional services]' />
+          <map key='[Crime severity index]' value='[Police Office Raw Data].[Crime severity index]' />
+          <map key='[Criminal Code incidents per police officer]' value='[Police Office Raw Data].[Criminal Code incidents per police officer]' />
+          <map key='[Date (Police Office Raw Data)]' value='[Police Office Raw Data].[Date]' />
+          <map key='[Date]' value='[Police Resources Raw Data].[Date]' />
+          <map key='[Female police officers]' value='[Police Office Raw Data].[Female police officers]' />
+          <map key='[Information technology (IT) operations 1]' value='[Police Resources Raw Data].[Information technology (IT) operations 1]' />
+          <map key='[Information technology (IT) operations]' value='[Police Resources Raw Data].[Information technology (IT) operations]' />
+          <map key='[Male police officers]' value='[Police Office Raw Data].[Male police officers]' />
+          <map key='[New building and capital projects]' value='[Police Resources Raw Data].[New building and capital projects]' />
+          <map key='[Police equipment 1]' value='[Police Resources Raw Data].[Police equipment 1]' />
+          <map key='[Police equipment]' value='[Police Resources Raw Data].[Police equipment]' />
+          <map key='[Police officers per 100,000 population]' value='[Police Office Raw Data].[Police officers per 100,000 population]' />
+          <map key='[Police-civilian ratio]' value='[Police Office Raw Data].[Police-civilian ratio]' />
+          <map key='[Total civilian personnel salaries, wages and benefits]' value='[Police Resources Raw Data].[Total civilian personnel salaries, wages and benefits]' />
+          <map key='[Total number of all personnel]' value='[Police Office Raw Data].[Total number of all personnel]' />
+          <map key='[Total number of civilian and other personnel]' value='[Police Office Raw Data].[Total number of civilian and other personnel]' />
+          <map key='[Total number of police officers]' value='[Police Office Raw Data].[Total number of police officers]' />
+          <map key='[Total police officers salaries, wages and benefits]' value='[Police Resources Raw Data].[Total police officers salaries, wages and benefits]' />
+          <map key='[Total recruit salaries, wages and benefits]' value='[Police Resources Raw Data].[Total recruit salaries, wages and benefits]' />
+          <map key='[Total special constable salaries, wages and benefits]' value='[Police Resources Raw Data].[Total special constable salaries, wages and benefits]' />
+          <map key='[Training and professional development cost)]' value='[Police Resources Raw Data].[Training and professional development cost)]' />
+          <map key='[Vehicle operating and maintenance cost]' value='[Police Resources Raw Data].[Vehicle operating and maintenance cost]' />
+          <map key='[Vehicle purchases]' value='[Police Resources Raw Data].[Vehicle purchases]' />
+          <map key='[Weighted clearance rate]' value='[Police Office Raw Data].[Weighted clearance rate]' />
+        </cols>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:Q3:no:A1:Q3:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Police Office Raw Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:M4:no:A1:M4:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total police officers salaries, wages and benefits</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total police officers salaries, wages and benefits]</local-name>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias>Total police officers salaries, wages and benefits</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total civilian personnel salaries, wages and benefits</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total civilian personnel salaries, wages and benefits]</local-name>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias>Total civilian personnel salaries, wages and benefits</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total special constable salaries, wages and benefits</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total special constable salaries, wages and benefits]</local-name>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias>Total special constable salaries, wages and benefits</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total recruit salaries, wages and benefits</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total recruit salaries, wages and benefits]</local-name>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias>Total recruit salaries, wages and benefits</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle operating and maintenance cost</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Vehicle operating and maintenance cost]</local-name>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias>Vehicle operating and maintenance cost</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Building operating and maintenance cost</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Building operating and maintenance cost]</local-name>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias>Building operating and maintenance cost</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Training and professional development cost)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Training and professional development cost)]</local-name>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias>Training and professional development cost)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Information technology (IT) operations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Information technology (IT) operations]</local-name>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias>Information technology (IT) operations</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Police equipment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Police equipment]</local-name>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias>Police equipment</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contracts for professional services</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Contracts for professional services]</local-name>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias>Contracts for professional services</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>All other non-salary operating expenditures</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[All other non-salary operating expenditures]</local-name>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias>All other non-salary operating expenditures</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle purchases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Vehicle purchases]</local-name>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias>Vehicle purchases</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New building and capital projects</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New building and capital projects]</local-name>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias>New building and capital projects</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Information technology (IT) operations 1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Information technology (IT) operations 1]</local-name>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias>Information technology (IT) operations 1</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Police equipment 1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Police equipment 1]</local-name>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias>Police equipment 1</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>All other capital expenditures</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[All other capital expenditures]</local-name>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias>All other capital expenditures</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date (Police Office Raw Data)]</local-name>
+            <parent-name>[Police Office Raw Data]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total number of all personnel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total number of all personnel]</local-name>
+            <parent-name>[Police Office Raw Data]</parent-name>
+            <remote-alias>Total number of all personnel</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total number of police officers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total number of police officers]</local-name>
+            <parent-name>[Police Office Raw Data]</parent-name>
+            <remote-alias>Total number of police officers</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Male police officers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Male police officers]</local-name>
+            <parent-name>[Police Office Raw Data]</parent-name>
+            <remote-alias>Male police officers</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Female police officers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Female police officers]</local-name>
+            <parent-name>[Police Office Raw Data]</parent-name>
+            <remote-alias>Female police officers</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total number of civilian and other personnel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total number of civilian and other personnel]</local-name>
+            <parent-name>[Police Office Raw Data]</parent-name>
+            <remote-alias>Total number of civilian and other personnel</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Police-civilian ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Police-civilian ratio]</local-name>
+            <parent-name>[Police Office Raw Data]</parent-name>
+            <remote-alias>Police-civilian ratio</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Police officers per 100,000 population</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Police officers per 100,000 population]</local-name>
+            <parent-name>[Police Office Raw Data]</parent-name>
+            <remote-alias>Police officers per 100,000 population</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Authorized police officer strength</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Authorized police officer strength]</local-name>
+            <parent-name>[Police Office Raw Data]</parent-name>
+            <remote-alias>Authorized police officer strength</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Authorized police officer strength per 100,000 population</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Authorized police officer strength per 100,000 population]</local-name>
+            <parent-name>[Police Office Raw Data]</parent-name>
+            <remote-alias>Authorized police officer strength per 100,000 population</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Criminal Code incidents per police officer</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Criminal Code incidents per police officer]</local-name>
+            <parent-name>[Police Office Raw Data]</parent-name>
+            <remote-alias>Criminal Code incidents per police officer</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crime severity index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Crime severity index]</local-name>
+            <parent-name>[Police Office Raw Data]</parent-name>
+            <remote-alias>Crime severity index</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weighted clearance rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Weighted clearance rate]</local-name>
+            <parent-name>[Police Office Raw Data]</parent-name>
+            <remote-alias>Weighted clearance rate</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[All other capital expenditures]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[All other non-salary operating expenditures]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Authorized police officer strength per 100,000 population]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Authorized police officer strength]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Building operating and maintenance cost]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Contracts for professional services]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Crime severity index]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Criminal Code incidents per police officer]' role='measure' type='quantitative' />
+      <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Female police officers]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Information technology (IT) operations 1]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Information technology (IT) operations]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Male police officers]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[New building and capital projects]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Police equipment 1]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Police equipment]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Police officers per 100,000 population]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Police-civilian ratio]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[Total civilian personnel salaries, wages and benefits]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Total number of all personnel]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total number of civilian and other personnel]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total number of police officers]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[Total police officers salaries, wages and benefits]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Total recruit salaries, wages and benefits]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total special constable salaries, wages and benefits]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Training and professional development cost)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Vehicle operating and maintenance cost]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Vehicle purchases]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Weighted clearance rate]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Police Office Raw Data' datatype='table' name='[__tableau_internal_object_id__].[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Police Resources Raw Data' datatype='table' name='[__tableau_internal_object_id__].[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[All other capital expenditures]' derivation='Sum' name='[sum:All other capital expenditures:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[All other non-salary operating expenditures]' derivation='Sum' name='[sum:All other non-salary operating expenditures:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Authorized police officer strength per 100,000 population]' derivation='Sum' name='[sum:Authorized police officer strength per 100,000 population:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Authorized police officer strength]' derivation='Sum' name='[sum:Authorized police officer strength:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Building operating and maintenance cost]' derivation='Sum' name='[sum:Building operating and maintenance cost:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Contracts for professional services]' derivation='Sum' name='[sum:Contracts for professional services:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Crime severity index]' derivation='Sum' name='[sum:Crime severity index:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Criminal Code incidents per police officer]' derivation='Sum' name='[sum:Criminal Code incidents per police officer:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Female police officers]' derivation='Sum' name='[sum:Female police officers:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Information technology (IT) operations 1]' derivation='Sum' name='[sum:Information technology (IT) operations 1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Information technology (IT) operations]' derivation='Sum' name='[sum:Information technology (IT) operations:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Male police officers]' derivation='Sum' name='[sum:Male police officers:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[New building and capital projects]' derivation='Sum' name='[sum:New building and capital projects:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Police equipment 1]' derivation='Sum' name='[sum:Police equipment 1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Police equipment]' derivation='Sum' name='[sum:Police equipment:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Police officers per 100,000 population]' derivation='Sum' name='[sum:Police officers per 100,000 population:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Police-civilian ratio]' derivation='Sum' name='[sum:Police-civilian ratio:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total civilian personnel salaries, wages and benefits]' derivation='Sum' name='[sum:Total civilian personnel salaries, wages and benefits:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total number of all personnel]' derivation='Sum' name='[sum:Total number of all personnel:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total number of civilian and other personnel]' derivation='Sum' name='[sum:Total number of civilian and other personnel:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total number of police officers]' derivation='Sum' name='[sum:Total number of police officers:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total police officers salaries, wages and benefits]' derivation='Sum' name='[sum:Total police officers salaries, wages and benefits:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total recruit salaries, wages and benefits]' derivation='Sum' name='[sum:Total recruit salaries, wages and benefits:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total special constable salaries, wages and benefits]' derivation='Sum' name='[sum:Total special constable salaries, wages and benefits:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Training and professional development cost)]' derivation='Sum' name='[sum:Training and professional development cost):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Vehicle operating and maintenance cost]' derivation='Sum' name='[sum:Vehicle operating and maintenance cost:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Vehicle purchases]' derivation='Sum' name='[sum:Vehicle purchases:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Weighted clearance rate]' derivation='Sum' name='[sum:Weighted clearance rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Date]' derivation='Year-Trunc' name='[tyr:Date:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/valay/OneDrive/Documents/My Tableau Repository/Datasources/Police Resources Raw Data+ (Multiple Connections).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/07/2021 12:02:41 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5' table='[Extract].[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8' table='[Extract].[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]' type='table' />
+            <relation name='Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5' table='[Extract].[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[All other capital expenditures]' value='[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8].[All other capital expenditures]' />
+            <map key='[All other non-salary operating expenditures]' value='[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8].[All other non-salary operating expenditures]' />
+            <map key='[Authorized police officer strength per 100,000 population]' value='[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5].[Authorized police officer strength per 100,000 population]' />
+            <map key='[Authorized police officer strength]' value='[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5].[Authorized police officer strength]' />
+            <map key='[Building operating and maintenance cost]' value='[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8].[Building operating and maintenance cost]' />
+            <map key='[Contracts for professional services]' value='[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8].[Contracts for professional services]' />
+            <map key='[Crime severity index]' value='[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5].[Crime severity index]' />
+            <map key='[Criminal Code incidents per police officer]' value='[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5].[Criminal Code incidents per police officer]' />
+            <map key='[Date (Police Office Raw Data)]' value='[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5].[Date]' />
+            <map key='[Date]' value='[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8].[Date]' />
+            <map key='[Female police officers]' value='[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5].[Female police officers]' />
+            <map key='[Information technology (IT) operations 1]' value='[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8].[Information technology (IT) operations 1]' />
+            <map key='[Information technology (IT) operations]' value='[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8].[Information technology (IT) operations]' />
+            <map key='[Male police officers]' value='[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5].[Male police officers]' />
+            <map key='[New building and capital projects]' value='[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8].[New building and capital projects]' />
+            <map key='[Police equipment 1]' value='[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8].[Police equipment 1]' />
+            <map key='[Police equipment]' value='[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8].[Police equipment]' />
+            <map key='[Police officers per 100,000 population]' value='[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5].[Police officers per 100,000 population]' />
+            <map key='[Police-civilian ratio]' value='[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5].[Police-civilian ratio]' />
+            <map key='[Total civilian personnel salaries, wages and benefits]' value='[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8].[Total civilian personnel salaries, wages and benefits]' />
+            <map key='[Total number of all personnel]' value='[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5].[Total number of all personnel]' />
+            <map key='[Total number of civilian and other personnel]' value='[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5].[Total number of civilian and other personnel]' />
+            <map key='[Total number of police officers]' value='[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5].[Total number of police officers]' />
+            <map key='[Total police officers salaries, wages and benefits]' value='[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8].[Total police officers salaries, wages and benefits]' />
+            <map key='[Total recruit salaries, wages and benefits]' value='[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8].[Total recruit salaries, wages and benefits]' />
+            <map key='[Total special constable salaries, wages and benefits]' value='[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8].[Total special constable salaries, wages and benefits]' />
+            <map key='[Training and professional development cost)]' value='[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8].[Training and professional development cost)]' />
+            <map key='[Vehicle operating and maintenance cost]' value='[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8].[Vehicle operating and maintenance cost]' />
+            <map key='[Vehicle purchases]' value='[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8].[Vehicle purchases]' />
+            <map key='[Weighted clearance rate]' value='[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5].[Weighted clearance rate]' />
+          </cols>
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='Police Resources Raw Data+ (Multiple Connections)' increment-value='%null%' refresh-type='create' rows-inserted='5' timestamp-start='2021-03-07 00:02:41.162' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Police Resources Raw Data</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total police officers salaries, wages and benefits</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total police officers salaries, wages and benefits]</local-name>
+              <parent-name>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</parent-name>
+              <remote-alias>Total police officers salaries, wages and benefits</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Police Resources Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total civilian personnel salaries, wages and benefits</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total civilian personnel salaries, wages and benefits]</local-name>
+              <parent-name>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</parent-name>
+              <remote-alias>Total civilian personnel salaries, wages and benefits</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Police Resources Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total special constable salaries, wages and benefits</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total special constable salaries, wages and benefits]</local-name>
+              <parent-name>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</parent-name>
+              <remote-alias>Total special constable salaries, wages and benefits</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Police Resources Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total recruit salaries, wages and benefits</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total recruit salaries, wages and benefits]</local-name>
+              <parent-name>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</parent-name>
+              <remote-alias>Total recruit salaries, wages and benefits</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Police Resources Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vehicle operating and maintenance cost</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Vehicle operating and maintenance cost]</local-name>
+              <parent-name>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</parent-name>
+              <remote-alias>Vehicle operating and maintenance cost</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Police Resources Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Building operating and maintenance cost</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Building operating and maintenance cost]</local-name>
+              <parent-name>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</parent-name>
+              <remote-alias>Building operating and maintenance cost</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Police Resources Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Training and professional development cost)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Training and professional development cost)]</local-name>
+              <parent-name>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</parent-name>
+              <remote-alias>Training and professional development cost)</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Police Resources Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Information technology (IT) operations</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Information technology (IT) operations]</local-name>
+              <parent-name>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</parent-name>
+              <remote-alias>Information technology (IT) operations</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Police Resources Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Police equipment</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Police equipment]</local-name>
+              <parent-name>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</parent-name>
+              <remote-alias>Police equipment</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Police Resources Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Contracts for professional services</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Contracts for professional services]</local-name>
+              <parent-name>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</parent-name>
+              <remote-alias>Contracts for professional services</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Police Resources Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>All other non-salary operating expenditures</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[All other non-salary operating expenditures]</local-name>
+              <parent-name>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</parent-name>
+              <remote-alias>All other non-salary operating expenditures</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Police Resources Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vehicle purchases</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Vehicle purchases]</local-name>
+              <parent-name>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</parent-name>
+              <remote-alias>Vehicle purchases</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Police Resources Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>New building and capital projects</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[New building and capital projects]</local-name>
+              <parent-name>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</parent-name>
+              <remote-alias>New building and capital projects</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Police Resources Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Information technology (IT) operations 1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Information technology (IT) operations 1]</local-name>
+              <parent-name>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</parent-name>
+              <remote-alias>Information technology (IT) operations 1</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Police Resources Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Police equipment 1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Police equipment 1]</local-name>
+              <parent-name>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</parent-name>
+              <remote-alias>Police equipment 1</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Police Resources Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>All other capital expenditures</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[All other capital expenditures]</local-name>
+              <parent-name>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</parent-name>
+              <remote-alias>All other capital expenditures</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Police Resources Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date (Police Office Raw Data)]</local-name>
+              <parent-name>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Police Office Raw Data</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total number of all personnel</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total number of all personnel]</local-name>
+              <parent-name>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</parent-name>
+              <remote-alias>Total number of all personnel</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Police Office Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total number of police officers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total number of police officers]</local-name>
+              <parent-name>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</parent-name>
+              <remote-alias>Total number of police officers</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Police Office Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Male police officers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Male police officers]</local-name>
+              <parent-name>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</parent-name>
+              <remote-alias>Male police officers</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Police Office Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Female police officers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Female police officers]</local-name>
+              <parent-name>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</parent-name>
+              <remote-alias>Female police officers</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Police Office Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total number of civilian and other personnel</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total number of civilian and other personnel]</local-name>
+              <parent-name>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</parent-name>
+              <remote-alias>Total number of civilian and other personnel</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Police Office Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Police-civilian ratio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Police-civilian ratio]</local-name>
+              <parent-name>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</parent-name>
+              <remote-alias>Police-civilian ratio</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Police Office Raw Data</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Police officers per 100,000 population</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Police officers per 100,000 population]</local-name>
+              <parent-name>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</parent-name>
+              <remote-alias>Police officers per 100,000 population</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Police Office Raw Data</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Authorized police officer strength</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Authorized police officer strength]</local-name>
+              <parent-name>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</parent-name>
+              <remote-alias>Authorized police officer strength</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Police Office Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Authorized police officer strength per 100,000 population</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Authorized police officer strength per 100,000 population]</local-name>
+              <parent-name>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</parent-name>
+              <remote-alias>Authorized police officer strength per 100,000 population</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Police Office Raw Data</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Criminal Code incidents per police officer</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Criminal Code incidents per police officer]</local-name>
+              <parent-name>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</parent-name>
+              <remote-alias>Criminal Code incidents per police officer</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Police Office Raw Data</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Crime severity index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Crime severity index]</local-name>
+              <parent-name>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</parent-name>
+              <remote-alias>Crime severity index</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Police Office Raw Data</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weighted clearance rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Weighted clearance rate]</local-name>
+              <parent-name>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</parent-name>
+              <remote-alias>Weighted clearance rate</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Police Office Raw Data</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[tyr:Date:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>#2018-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2019-01-01 00:00:00#</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[__tableau_internal_object_id__].[cnt:Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8:qk]&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Vehicle purchases:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Amount:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Total number of all personnel:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Authorized police officer strength:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Total recruit salaries, wages and benefits:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Female police officers:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Crime severity index:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Weighted clearance rate:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Authorized police officer strength per 100,000 population:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Total special constable salaries, wages and benefits:qk]&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Police equipment 1:qk]&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Police-civilian ratio:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:All other capital expenditures:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Total number of civilian and other personnel:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:New building and capital projects:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Building operating and maintenance cost:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Training and professional development cost):qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Information technology (IT) operations:qk]&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Information technology (IT) operations 1:qk]&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Police equipment:qk]&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Police officers per 100,000 population:qk]&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Total civilian personnel salaries, wages and benefits:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[__tableau_internal_object_id__].[cnt:Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5:qk]:1&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Contracts for professional services:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Vehicle operating and maintenance cost:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[__tableau_internal_object_id__].[cnt:Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Total number of police officers:qk]&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Male police officers:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Criminal Code incidents per police officer:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:All other non-salary operating expenditures:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Total police officers salaries, wages and benefits:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Police Office Raw Data' id='Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5'>
+            <properties context=''>
+              <relation connection='excel-direct.151c0da1jf9alg12nm9e91kz6tpq' name='Police Office Raw Data' table='[&apos;Police Office Raw Data$&apos;]' type='table'>
+                <columns gridOrigin='A1:M4:no:A1:M4:0' header='yes' outcome='6'>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='integer' name='Total number of all personnel' ordinal='1' />
+                  <column datatype='integer' name='Total number of police officers' ordinal='2' />
+                  <column datatype='integer' name='Male police officers' ordinal='3' />
+                  <column datatype='integer' name='Female police officers' ordinal='4' />
+                  <column datatype='integer' name='Total number of civilian and other personnel' ordinal='5' />
+                  <column datatype='real' name='Police-civilian ratio' ordinal='6' />
+                  <column datatype='real' name='Police officers per 100,000 population' ordinal='7' />
+                  <column datatype='integer' name='Authorized police officer strength' ordinal='8' />
+                  <column datatype='real' name='Authorized police officer strength per 100,000 population' ordinal='9' />
+                  <column datatype='real' name='Criminal Code incidents per police officer' ordinal='10' />
+                  <column datatype='real' name='Crime severity index' ordinal='11' />
+                  <column datatype='real' name='Weighted clearance rate' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5' table='[Extract].[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]' type='table' />
+            </properties>
+          </object>
+          <object caption='Police Resources Raw Data' id='Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8'>
+            <properties context=''>
+              <relation connection='excel-direct.11wseel1889w0016a47ze0ma5qhs' name='Police Resources Raw Data' table='[&apos;Police Resources Raw Data$&apos;]' type='table'>
+                <columns gridOrigin='A1:Q3:no:A1:Q3:0' header='yes' outcome='6'>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='integer' name='Total police officers salaries, wages and benefits' ordinal='1' />
+                  <column datatype='integer' name='Total civilian personnel salaries, wages and benefits' ordinal='2' />
+                  <column datatype='integer' name='Total special constable salaries, wages and benefits' ordinal='3' />
+                  <column datatype='integer' name='Total recruit salaries, wages and benefits' ordinal='4' />
+                  <column datatype='integer' name='Vehicle operating and maintenance cost' ordinal='5' />
+                  <column datatype='integer' name='Building operating and maintenance cost' ordinal='6' />
+                  <column datatype='integer' name='Training and professional development cost)' ordinal='7' />
+                  <column datatype='integer' name='Information technology (IT) operations' ordinal='8' />
+                  <column datatype='integer' name='Police equipment' ordinal='9' />
+                  <column datatype='integer' name='Contracts for professional services' ordinal='10' />
+                  <column datatype='integer' name='All other non-salary operating expenditures' ordinal='11' />
+                  <column datatype='integer' name='Vehicle purchases' ordinal='12' />
+                  <column datatype='integer' name='New building and capital projects' ordinal='13' />
+                  <column datatype='integer' name='Information technology (IT) operations 1' ordinal='14' />
+                  <column datatype='integer' name='Police equipment 1' ordinal='15' />
+                  <column datatype='integer' name='All other capital expenditures' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8' table='[Extract].[Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Date]' />
+              <expression op='[Date (Police Office Raw Data)]' />
+            </expression>
+            <first-end-point object-id='Police Resources Raw Data_A98829F2A7744592B9C39E5EB4B97FC8' />
+            <second-end-point object-id='Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Police Resources Raw Data (Police Resources Raw Data treemap data)' inline='true' name='federated.02oriw70qr53h01b9sg981hzqays' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Police Resources Raw Data treemap data' name='excel-direct.00i263p12rntae1gxh4ld1laoc7g'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/valay/OneDrive/Desktop/Ivey/General/Data Visualization Workshop/Data Viz UNB Challenge/Police Resources Raw Data treemap data.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.00i263p12rntae1gxh4ld1laoc7g' name='Police Resources Raw Data' table='[&apos;Police Resources Raw Data$&apos;]' type='table'>
+          <columns gridOrigin='A1:C33:no:A1:C33:0' header='yes' outcome='2'>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='string' name='F2' ordinal='1' />
+            <column datatype='integer' name='Total police officers salaries, wages and benefits' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.00i263p12rntae1gxh4ld1laoc7g' name='Police Resources Raw Data' table='[&apos;Police Resources Raw Data$&apos;]' type='table'>
+          <columns gridOrigin='A1:C33:no:A1:C33:0' header='yes' outcome='2'>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='string' name='F2' ordinal='1' />
+            <column datatype='integer' name='Total police officers salaries, wages and benefits' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C33:no:A1:C33:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_2AEA1430133A4F46BA835AB9EF116478]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_2AEA1430133A4F46BA835AB9EF116478]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total police officers salaries, wages and benefits</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total police officers salaries, wages and benefits]</local-name>
+            <parent-name>[Police Resources Raw Data]</parent-name>
+            <remote-alias>Total police officers salaries, wages and benefits</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_2AEA1430133A4F46BA835AB9EF116478]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[F2]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Police Resources Raw Data' datatype='table' name='[__tableau_internal_object_id__].[Police Resources Raw Data_2AEA1430133A4F46BA835AB9EF116478]' role='measure' type='quantitative' />
+      <column-instance column='[F2]' derivation='None' name='[none:F2:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/valay/OneDrive/Documents/My Tableau Repository/Datasources/Police Resources Raw Data (Police Resources Raw Data treemap data).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/07/2021 12:02:33 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='Police Resources Raw Data (Police Resources Raw Data treemap data)' increment-value='%null%' refresh-type='create' rows-inserted='32' timestamp-start='2021-03-07 00:02:33.312' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Police Resources Raw Data</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_2AEA1430133A4F46BA835AB9EF116478]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F2</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Police Resources Raw Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_2AEA1430133A4F46BA835AB9EF116478]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total police officers salaries, wages and benefits</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total police officers salaries, wages and benefits]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total police officers salaries, wages and benefits</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Police Resources Raw Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Police Resources Raw Data_2AEA1430133A4F46BA835AB9EF116478]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:F2:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Total police officers salaries, wages and benefits&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;All other capital expenditures&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Information technology (IT) operations&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Vehicle operating and maintenance cost&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Total recruit salaries, wages and benefits&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;New building and capital projects&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;All other non-salary operating expenditures&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Police equipment&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Vehicle purchases&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Total special constable salaries, wages and benefits&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Total civilian personnel salaries, wages and benefits&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Building operating and maintenance cost&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Training and professional development cost)&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Contracts for professional services&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Police Resources Raw Data' id='Police Resources Raw Data_2AEA1430133A4F46BA835AB9EF116478'>
+            <properties context=''>
+              <relation connection='excel-direct.00i263p12rntae1gxh4ld1laoc7g' name='Police Resources Raw Data' table='[&apos;Police Resources Raw Data$&apos;]' type='table'>
+                <columns gridOrigin='A1:C33:no:A1:C33:0' header='yes' outcome='2'>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='string' name='F2' ordinal='1' />
+                  <column datatype='integer' name='Total police officers salaries, wages and benefits' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Crime severity'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Crime Severity Index vs Police Civilian Ratio</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Police Resources Raw Data+ (Multiple Connections)' name='federated.1ic0zxi17thjg21fjcmcd1bjyi9a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ic0zxi17thjg21fjcmcd1bjyi9a'>
+            <column datatype='real' name='[Crime severity index]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date (Police Office Raw Data)]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Police Office Raw Data' datatype='integer' name='[__tableau_internal_object_id__].[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Police-civilian ratio]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='Police Office Raw Data' datatype='table' name='[__tableau_internal_object_id__].[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Crime severity index]' derivation='Sum' name='[sum:Crime severity index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Police-civilian ratio]' derivation='Sum' name='[sum:Police-civilian ratio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date (Police Office Raw Data)]' derivation='Year-Trunc' name='[tyr:Date (Police Office Raw Data):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Police-civilian ratio:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Crime severity index:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Crime severity index:qk]' max='300.43000000000001' min='300.43000000000001' palette='red_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Police-civilian ratio:qk]' max='5.2000000000000002' min='5.2000000000000002' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='left' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Crime severity index:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Crime severity index:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9890055656433105' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Police-civilian ratio:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[__tableau_internal_object_id__].[cnt:Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Crime severity index:qk] + [federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Police-civilian ratio:qk])</rows>
+        <cols>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[tyr:Date (Police Office Raw Data):qk]</cols>
+      </table>
+      <simple-id uuid='{F5DCCF50-F5EF-402F-A4CC-CE110F6DD3A7}' />
+    </worksheet>
+    <worksheet name='bubbles'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Total Expenditure Relative Bubble Map</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Police Resources Raw Data (Police Resources Raw Data treemap data)' name='federated.02oriw70qr53h01b9sg981hzqays' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02oriw70qr53h01b9sg981hzqays'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[F2]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total police officers salaries, wages and benefits]' role='measure' type='quantitative' />
+            <column-instance column='[F2]' derivation='None' name='[none:F2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total police officers salaries, wages and benefits]' derivation='Sum' name='[sum:Total police officers salaries, wages and benefits:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02oriw70qr53h01b9sg981hzqays].[yr:Date:ok]'>
+            <groupfilter function='member' level='[yr:Date:ok]' member='2019' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.02oriw70qr53h01b9sg981hzqays].[yr:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.02oriw70qr53h01b9sg981hzqays].[sum:Total police officers salaries, wages and benefits:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.02oriw70qr53h01b9sg981hzqays].[sum:Total police officers salaries, wages and benefits:qk]' palette='orange_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.02oriw70qr53h01b9sg981hzqays].[sum:Total police officers salaries, wages and benefits:qk]' />
+              <color column='[federated.02oriw70qr53h01b9sg981hzqays].[sum:Total police officers salaries, wages and benefits:qk]' />
+              <text column='[federated.02oriw70qr53h01b9sg981hzqays].[none:F2:nk]' />
+              <text column='[federated.02oriw70qr53h01b9sg981hzqays].[sum:Total police officers salaries, wages and benefits:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='16' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{63E85949-CB2B-4B54-81FD-1F7D66243B7E}' />
+    </worksheet>
+    <worksheet name='crime and police trend'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Crimes vs Police Officers Trend</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Police Resources Raw Data+ (Multiple Connections)' name='federated.1ic0zxi17thjg21fjcmcd1bjyi9a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ic0zxi17thjg21fjcmcd1bjyi9a'>
+            <column datatype='real' name='[Criminal Code incidents per police officer]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date (Police Office Raw Data)]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Police officers per 100,000 population]' role='measure' type='quantitative' />
+            <column-instance column='[Criminal Code incidents per police officer]' derivation='Sum' name='[sum:Criminal Code incidents per police officer:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Police officers per 100,000 population]' derivation='Sum' name='[sum:Police officers per 100,000 population:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date (Police Office Raw Data)]' derivation='Year-Trunc' name='[tyr:Date (Police Office Raw Data):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Police officers per 100,000 population:qk]' field-type='quantitative' fold='true' max='374.63999999999999' min='-1.4210854715202004e-14' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[tyr:Date (Police Office Raw Data):qk]' field-type='quantitative' max='#2019-08-25 01:31:57.445#' min='#2016-11-14 15:48:53.641#' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Criminal Code incidents per police officer:qk]' field-type='quantitative' max='140.26471092077094' min='-7.1054273576010019e-15' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Police officers per 100,000 population:qk]' max='348.10000000000002' min='348.10000000000002' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Criminal Code incidents per police officer:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Police officers per 100,000 population:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Police officers per 100,000 population:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Criminal Code incidents per police officer:qk] + [federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Police officers per 100,000 population:qk])</rows>
+        <cols>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[tyr:Date (Police Office Raw Data):qk]</cols>
+      </table>
+      <simple-id uuid='{EA1AC576-CA45-4DF7-A5A7-78A4BEECF758}' />
+    </worksheet>
+    <worksheet name='treemap'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Total Expenditure Map</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Police Resources Raw Data (Police Resources Raw Data treemap data)' name='federated.02oriw70qr53h01b9sg981hzqays' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02oriw70qr53h01b9sg981hzqays'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[F2]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total police officers salaries, wages and benefits]' role='measure' type='quantitative' />
+            <column-instance column='[F2]' derivation='None' name='[none:F2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total police officers salaries, wages and benefits]' derivation='Sum' name='[sum:Total police officers salaries, wages and benefits:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02oriw70qr53h01b9sg981hzqays].[yr:Date:ok]'>
+            <groupfilter function='member' level='[yr:Date:ok]' member='2018' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.02oriw70qr53h01b9sg981hzqays].[yr:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='697' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.02oriw70qr53h01b9sg981hzqays].[sum:Total police officers salaries, wages and benefits:qk]' palette='orange_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.02oriw70qr53h01b9sg981hzqays].[yr:Date:ok]' value='Year of Date'>
+              <formatted-text>
+                <run fontalignment='1'>Year of Date</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.02oriw70qr53h01b9sg981hzqays].[sum:Total police officers salaries, wages and benefits:qk]' />
+              <color column='[federated.02oriw70qr53h01b9sg981hzqays].[sum:Total police officers salaries, wages and benefits:qk]' />
+              <text column='[federated.02oriw70qr53h01b9sg981hzqays].[none:F2:nk]' />
+              <text column='[federated.02oriw70qr53h01b9sg981hzqays].[sum:Total police officers salaries, wages and benefits:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='16' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{94C862FA-7310-42DC-93E5-BB2374311DE3}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='900' maxwidth='1600' minheight='900' minwidth='1600' preset-index='8' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Police Resources Raw Data (Police Resources Raw Data treemap data)' name='federated.02oriw70qr53h01b9sg981hzqays' />
+      </datasources>
+      <datasource-dependencies datasource='federated.02oriw70qr53h01b9sg981hzqays'>
+        <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+        <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='empty' _.fcp.SetMembershipControl.true...type-v2='empty' h='40556' id='3' w='50063' x='750' y='9333' />
+        <zone _.fcp.SetMembershipControl.false...type='empty' _.fcp.SetMembershipControl.true...type-v2='empty' h='40778' id='4' w='47938' x='51375' y='8889' />
+        <zone _.fcp.SetMembershipControl.false...type='empty' _.fcp.SetMembershipControl.true...type-v2='empty' h='48111' id='5' w='49938' x='750' y='50444' />
+        <zone _.fcp.SetMembershipControl.false...type='empty' _.fcp.SetMembershipControl.true...type-v2='empty' h='49556' id='6' w='48000' x='51563' y='50000' />
+        <zone h='39667' id='7' name='Crime severity' w='49500' x='875' y='9333' />
+        <zone h='40444' id='8' name='crime and police trend' w='47813' x='51563' y='8667' />
+        <zone h='48111' id='9' name='treemap' w='50000' x='500' y='49889' />
+        <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='23889' id='10' name='treemap' param='[federated.02oriw70qr53h01b9sg981hzqays].[yr:Date:ok]' w='7188' x='43875' y='55889' />
+        <zone h='48556' id='11' name='bubbles' w='48438' x='50625' y='49667' />
+        <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='10778' id='12' name='bubbles' param='[federated.02oriw70qr53h01b9sg981hzqays].[yr:Date:ok]' w='10000' x='89625' y='54667' />
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='6333' id='13' w='56750' x='21500' y='1556'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#499894' fontname='Segoe UI Black' fontsize='26'>Police Resources and Crime Statistics</run>
+          </formatted-text>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='10556' id='42' name='crime and police trend' pane-specification-id='1' param='[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[:Measure Names]' w='19688' x='79188' y='65667' />
+        <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='10556' id='43' name='crime and police trend' pane-specification-id='2' param='[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Police officers per 100,000 population:qk]' w='22188' x='79250' y='70889' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1500' minheight='1500' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='47' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='46' param='vert' w='84000' x='8000' y='8000'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='6333' id='13' w='56750' x='21500' y='1556'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#499894' fontname='Segoe UI Black' fontsize='26'>Police Resources and Crime Statistics</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40444' id='8' is-fixed='true' name='crime and police trend' w='47813' x='51563' y='8667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='10556' id='42' name='crime and police trend' pane-specification-id='1' param='[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[:Measure Names]' w='19688' x='79188' y='65667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='10556' id='43' name='crime and police trend' pane-specification-id='2' param='[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Police officers per 100,000 population:qk]' w='22188' x='79250' y='70889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39667' id='7' is-fixed='true' name='Crime severity' w='49500' x='875' y='9333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='10778' id='12' mode='checkdropdown' name='bubbles' param='[federated.02oriw70qr53h01b9sg981hzqays].[yr:Date:ok]' w='10000' x='89625' y='54667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48556' id='11' is-fixed='true' name='bubbles' w='48438' x='50625' y='49667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='23889' id='10' mode='checkdropdown' name='treemap' param='[federated.02oriw70qr53h01b9sg981hzqays].[yr:Date:ok]' w='7188' x='43875' y='55889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48111' id='9' is-fixed='true' name='treemap' w='50000' x='500' y='49889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{067698F1-4D66-44DE-B1F5-62B64BFBF8D9}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='58'>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Crime severity'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='bubbles'>
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields />
+                    <y-fields />
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.02oriw70qr53h01b9sg981hzqays].[none:F2:nk]</field>
+                    <field>[federated.02oriw70qr53h01b9sg981hzqays].[sum:Total police officers salaries, wages and benefits:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;Total police officers salaries, wages and benefits&quot;</value>
+                  <value>19744536</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='crime and police trend'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[:Measure Names]</field>
+            </color-one-way>
+          </highlight>
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='treemap' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{3F469D5F-D230-47B2-B299-3C65BF65987E}' />
+    </window>
+    <window class='worksheet' name='Crime severity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='35'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[__tableau_internal_object_id__].[cnt:Police Office Raw Data_E86F8F1F373846B199950CDFD2DA08F5:qk]</field>
+            <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Crime severity index:qk]</field>
+            <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[yr:Date (Police Office Raw Data):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6B8CE574-0A0C-4EAB-87FA-47DB3E31DCDC}' />
+    </window>
+    <window class='worksheet' name='crime and police trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='35'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[:Measure Names]</field>
+            <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[sum:Police officers per 100,000 population:qk]</field>
+            <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[yr:Date (Police Office Raw Data):ok]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{60094C44-2A42-444C-B7B1-307FCD338213}' />
+    </window>
+    <window class='worksheet' maximized='true' name='treemap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.02oriw70qr53h01b9sg981hzqays].[yr:Date:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.02oriw70qr53h01b9sg981hzqays].[none:Calculation_475692728914907136:qk]</field>
+            <field>[federated.02oriw70qr53h01b9sg981hzqays].[none:F2:nk]</field>
+            <field>[federated.02oriw70qr53h01b9sg981hzqays].[yr:Date:ok]</field>
+            <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[:Measure Names]</field>
+            <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[none:All other capital expenditures:ok]</field>
+            <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[none:Total civilian personnel salaries, wages and benefits:ok]</field>
+            <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[none:Total police officers salaries, wages and benefits:ok]</field>
+            <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[tyr:Date:ok]</field>
+            <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[yr:Date (Police Office Raw Data):ok]</field>
+            <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F5D9D69F-BE22-4A70-B4DF-892F2C4A1662}' />
+    </window>
+    <window class='worksheet' name='bubbles'>
+      <cards>
+        <edge name='left'>
+          <strip size='128'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.02oriw70qr53h01b9sg981hzqays].[yr:Date:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.02oriw70qr53h01b9sg981hzqays].[none:Calculation_475692728914907136:qk]</field>
+            <field>[federated.02oriw70qr53h01b9sg981hzqays].[sum:Total police officers salaries, wages and benefits:qk]</field>
+            <field>[federated.02oriw70qr53h01b9sg981hzqays].[yr:Date:ok]</field>
+            <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[:Measure Names]</field>
+            <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[none:All other capital expenditures:ok]</field>
+            <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[none:Total civilian personnel salaries, wages and benefits:ok]</field>
+            <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[none:Total police officers salaries, wages and benefits:ok]</field>
+            <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[tyr:Date:ok]</field>
+            <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[yr:Date (Police Office Raw Data):ok]</field>
+            <field>[federated.1ic0zxi17thjg21fjcmcd1bjyi9a].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D8473176-DAEF-4356-8DFB-38B64B32D0C5}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Crime severity' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='bubbles' width='192'>
+      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
+      pgDEaApAjKYAxGgKQIymAMRoCkCMpgDEaApAjKYAxGgKQIymAMRoCkCMpgDEaApAjKYAxGgK
+      QIymAMRoCkCMpgDEaApAjKYAxGgKQIymAMRoCkCMpgDEaApAjKYAxGgKQIymAMRoCkCMpgDE
+      aApAjKYAxGgKQIymAMRoCkCMpgDEaApAjKYAxGgKQIymAMRoCkCMpgDEaApAjKYAxGgKQIym
+      AMRoCkCMpgDEaApAjKYAxGgKQIymAMRoCkCMpgDEaApAjKYAxGgKQIymAMRoCkCMpgDEaApA
+      jKYAxGgKQIymAMRoCkCMpgDEaApAjKYAxGgKQIymAMRoCkCMpgDEaApAjKYAxGgKQIymAMRo
+      CkCMpgDEaApAjKYAxGgKQIymAMRoCkCMpgDEaApAjKYAxGgKQIymAMRoCkCMpgDEaApAjKYA
+      xGgKQIymAMRoCkCMpgDEaApAjKYAxGgKQIymAMRoCkCMpgDEaApAjKYAxGgKQIymAMRoCkCM
+      pgDEaApAjKYAxGgKQIymAMRoCkCMpgDEaApAjKYAxGgKQIz2/48m4Czkcux9AAAAAElFTkSu
+      QmCC
+    </thumbnail>
+    <thumbnail height='192' name='crime and police trend' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='treemap' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAO0ElEQVR4nO3baXCc9X3A8e/e96k9tStpdR+WbR2WkCzfNlAChXKHMTiExAZsYmBK23Tc
+      ckxepB3azPRNX7TQKZNm2pI2pEkKnWlDwAeHYy5jELItS9iWVrJka1fSStq7L9bY+AgxKcZM
+      /7/POz169r+/59n9rp7Zx9YUi8UiQihKe6UHEOJKkgCE0vSf/uH1HzzO1JGBKzWLEF+6cwI4
+      dbifEwfevlKzCPGlk0sgoTQJQCjtwgA0Wupv3UL7tx6l/b6HqV295oJdHJUN6I26C1fT2ei4
+      78FLfvLGu7+D1WSk5d4/wW43fJ65S6OaPXRtf4KKzjY8ravo3vbHeGraaN+48XOvdals1d00
+      rF/9mfs0fP0RXH7HZZvhi6bzN7Dk5htO/2Cm475tv/ta9gBd258gsnQxHQ/uQKfX4q5tRqP5
+      gob9gl0YQLHAoX//O2bm9Ey98xKDr76CRmck0NaLqzyMzualfcsOatZcjc3rwuyLUt61EluZ
+      BzQ6nNHKM0s5Y424qhoJNLWUNuiMBJaW1gGwR6rQ6bQc3/kfzM/l0BgsBDuW4wj4QaPHv7QX
+      Zzj0qeE0uOuX4m9sAo2G6PrbsernmUvlWHT7vSQPvcP85FGG9uwBwBapI7S0A61Wg6ksQri9
+      G51Bh8EdxO73421oRWswEWhbTlld3Zln0ZmdhJetwB2NlJ6zoY3yjm50eh06qwtbmRd0RvxL
+      egi2tJaOpbIRk8OFt6aW+GsvMZdMoTFYCHX2YfO6S/tUNFLe2YPBbDznlJt8UaweJ3qHD291
+      DLQGPNW1aM12Qh19lNXUlo5ebybYvhxPbRMmmwmN0Uqosw+rxwWAo6qptL7pkw+TT2a/Cp1e
+      i6ksgqM8SqizD5PVBICrtpVgaweOYOD0Q7S4Kmsoa1mGM1TaZnSHCHf2oDca0Dt8uCqqCLb1
+      YnGVInfEWgg0twBaKq+9CxNJZidPMvTfL2DwhOne/gQVvWswWYwXmfHKuqRLoMVb/hy73UDd
+      nY/gr/STz2TIzk6Tz+bw1LdAUUP3I0+iO2+1ulseIFhfhb/vNhpWdbP42zuwu0zU3fEwwZry
+      M/s13LkFi8FI16Pfx2QAayBMyze/i8NhoHHjY7jK7ACE126kelkLztYNLPq9deQW5inkMmTn
+      UuTSGdLTU2jNYRbdejPOljUsvfUmMFixhevp2vwgmLws+9b9uFpWsGrH08Su6qT+zu34Qk5s
+      oRg6feljqu2BxzHqCzgqatBa3HgiIfTBZjo3fv3MzJZAFRaHBV/vrdQtb6P69zez4o8exxMJ
+      U33jZhweCx0PPYFeU2Dp/X+GLVBD9+b7yBd0OMPhc86ToayW5uuupXzljbRtvBdzsIna1X04
+      KurRG7TU3radQCxA+3e+h9Wmp+bmh/BFfXQ+9CR6TYH2rTuwhhro+sYm8gU9jlCwtLDZjTca
+      Ru9rZNmmjXjbr2bpbbeic1fRufEu/MtvoXHNcjTac/+aG1xBjCY9bVufwhGI0L3tUdBa6X5g
+      O7baZXRu+iY6m5eubz+Ie8k1NK3vw9G4iqYNq8gtLFDILpBLp1m0cSuaQppCNktmJonWW0PX
+      pk3ki5+a8Qr77QFoDLi8Ro7s3smRXbvxxSKkTp7i1KH3WUjliC5fj6+pBbMnhMF03mOLWcb2
+      vcbwy/+Dq6YBp9/B8M5XGHx1F4GW5vN2dmAyJjn65muMH9hPoKkVZ30bmuwclrIyAAJL2zn8
+      i3/hyM9/jGdxFzPxY8yPH2P66BCpkyeZOnSAzEIGAP/iDoZf+lfG9u0GdwWOMg/BpgbQGtEA
+      Y7tf4O0fPsfIrv/CWttJuK0N7ek3wvCvfkFg2XoCjY1YgjGiPStxhkLYg2ffuM7aJUQ6u7G6
+      XdiDEQA+/OHTDO7aXdpBp8dX14SvtYtCZgGDdpb4wCix1ddidljPOfLU0DtYKxbjCjiJH56g
+      asVKTrz1Gr7FvYSWdmJyuLD5wtjsMLR7J9PxOODA11hbWj9bRJ8bZ3x4gtiaazDbSutbAlVE
+      elbiDAWxhUozTry3h/j7+9GbzQSa2zn84j8z/tGH58yTmRoh/s4bjB0extvchSvgJbiolYJG
+      hw6Y6t/H2P63QGfE19qJ2ePH6bOjt7qYGT3O3NjHpCZPApBNTrKQTDL50XvMjw0z/vEEsdVn
+      Z7zSfnsAxSwnR6dpuv4mGtatJr5/P7OTE1Suug6b34fVYSV5/Dj5fOEiqxso71lLyy23EP/1
+      G5w6NkHjDX9A44a1xN99/7ydp5mdMVF/9fVEOrsY+2A/uUScif79LEynAIi/uYemO7bQfNe9
+      TOx99TPHHt+3h5qb7qVq3fVoEkeZm8syNdjPyUMDFIH0TBIAe3mUyQP70LoimK2lSxN7MMiJ
+      d9/AXtGExV9OLjHO3FTinPVt4Wpmj31EOjV/+jxBZmb67GnL55g4dJC5+BEm+98nb/KgSY0x
+      OXgUf3MzrqYeQk31pX0z08zl3Nj0KeIDgzSt72X80BD2cAXJoYNk0xkgy/jgON1b/5Bwawsw
+      w8TAEKn4ESb63wVLgHxihMnhEfyNjQCYvCHyybELZv/E5MEDNNy0iVjfqnO26x0BKld9jXB1
+      kPH3XmMmsVA6dwP9nP8qT+x/k2KhyMmBAyRGRi76PHMz88RWX4ujPHp2xoaGz3z9viyaT/9b
+      oP/cevuZ+wAmb5DifILMfBo0OlyxejJTceYTydI1ak09qZFBNBYPJpOGfNHA3Inj2INhZuKl
+      E9Hx6NOM//JHJOMjzE5MlK4vYw1kE6UXxRqKsnBiBHMgwsL4CAWNDnd1PenJEeaTMzhjDWiy
+      KZIjx88MbA3H0GsyTI+OojU7MFt0zE0lsPgiZKZGKRSN2PxuZsfHMXlCWN02EsOD6GwenOVh
+      Zo8PUdCY0etyLEzPoNGbcMdqSZ8aY+7UKQC0ZjvuiipSY8OkZ+ZwVtWTTkxgNBtJJecxW7TM
+      JVN4auqYOzGOVpsHg4NMYpR8toAlECVzaoR8QY+7up7czCSzJ05gDVZishlJDB1hyZY/5eCP
+      /pr52YXS+S4LoyvMMz+zgLM8SPLox2hNNlyRcuanpimkk5i85aQTJ1m67SkOPbuDxFQWT6yO
+      7PQEsxMTWENVmCx6poYGz5wvZ1Uj6alxjFYzC6ks2uI86YUCdq+D2RMTOCrryc1No9PkmZ2Y
+      BLRYygKYPV5mRwbJzqfRWV24olFSo8Pk8jpMJg1z0ynsfj+z43HM/ihWp43Ex4fQGB0YjUXm
+      E9PYw5XMxo+iNdpwV1WRPNKPyV95wYxX0m8M4IsQ6FhJ4oM3yKSzX9ia/z9oMbmcpJMX/2T+
+      TbyLegm1NJE4+Baj7+2/TLOp5bIGIMRXndwIE0q7eAA6A4GOFfjq6y/4lb2isfSdrs1S2tXq
+      xnv6e2q0enxLek9/J3wuS7CKiuXrsHpcaIx2KvqupnLF1ZRVV4NGi7u+jYqelV+Z74eFGi4a
+      QPM3vovTpiG87m5ina1ntrsXr6f1hmuYSySxeDw46ntY++TfsPjmmwGovWUb/ogLb+cNNK5d
+      fuZxlooldN5zD/OnJrF4fdhi7UQW1zETP8bC9DSu5l6CdRHSWQtXbXv4Mh+yEGddNABXJEj8
+      7b0M/OwnRPvO3vavWnMd6VSaiu5eCpkFUkffY+dfPEWu8Mnjooy9+yaHX3ye4LKzj4us+BrZ
+      mSTRntWQz2ANhrH6K6noWYmGPMkP9zDw0otoLS7yqenzxxHistFfbOOBf/p7mu5+mFzRjIaT
+      Z7brjAaOvfpTZnI+ujfdz86/+j5F69n/Udn/42dovnEz+WwR3aduC+vMJsb3vsDxw0lWPvYY
+      rzzxGC/veh5rZSfdW7byyl8+zZLNO9Cnhtj77DOX8XCFONdF/wIUMzP0/9s/ksnkObrrZYze
+      cjyVUUb3vU5F7xqsZUEy06fQmSyYnG50RgtGux3yCwz85DlmZzKMvP5L9A4/ZbU1jO3dSbhn
+      A1ZfkFwqga9tJd5YDGsgRCZxiuCK27Bkhvjg5z9DZ/5q3CEUarhoAIU8RPs2kNj3Uz5+p5+a
+      G+7BaICxnc8zMngSb8jKW8/9A/aqFqLtizgxMERF11UUcgXKe9axMLiLg6++QeWGO7DajSQ/
+      +BUDu94m1FzDr//2B0wd/gBXQycud4G9zz7DwugAyak81WuvJ9qx7Ms+B0Jhl3AfQIOnrpGp
+      wx997sU9dc1MHe7/v84oxGVzCfcBir/Tmx+QN7/4ypMbYUJpEoBQmgQglCYBCKVJAEJpEoBQ
+      mgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJ
+      AEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQg
+      lCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJp
+      EoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYB
+      CKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQ
+      mgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJ
+      AEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQg
+      lCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJp
+      EoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYB
+      CKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQ
+      mgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJ
+      AEJpEoBQmgQglCYBCKX9L29DILhhNLUdAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
