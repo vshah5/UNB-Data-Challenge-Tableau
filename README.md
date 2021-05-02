@@ -1,2 +1,2 @@
-# UNB-Case-Comp-Tableau
+# UNB Data Challenge - Data Visualization
 Created a visually appealing infographic and aesthetically pleasing dashboard to present insights about crime in Nunavut in accordance with the Canadian government's mandate to achieving their sustainable goal of Peace, Justice, and strong institutions.  Rewarded with 1st place in the presentation round and 3rd place in the infographic round by a diverse set of professional judges.
